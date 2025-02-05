@@ -1,0 +1,31 @@
+{
+	"name": "ds_target_sql_fullload_last_7days",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_target_sqlserver",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tableschematarget": {
+				"type": "string"
+			},
+			"tablenametarget": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().tableschematarget",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().tablenametarget",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

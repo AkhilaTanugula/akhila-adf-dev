@@ -1,0 +1,29 @@
+{
+	"name": "copy file",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Week",
+				"interval": 1,
+				"startTime": "2025-02-04T14:08:00",
+				"timeZone": "India Standard Time",
+				"schedule": {
+					"minutes": [
+						10
+					],
+					"hours": [
+						10
+					],
+					"weekDays": [
+						"Saturday",
+						"Sunday"
+					]
+				}
+			}
+		}
+	}
+}
