@@ -1,0 +1,10 @@
+{
+	"name": "adf_akhi_keyvault",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://adf-akhi-keyvault.vault.azure.net/"
+		}
+	}
+}
